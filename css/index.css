@@ -1,0 +1,424 @@
+#pickup-container{
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+
+.box-pickup{
+    display: inline-block;
+    width: 460px;
+    height: 100%;
+    overflow: auto;
+    margin: 0px;
+    vertical-align: text-top;
+
+}
+
+#map-result{
+    display: inline-block;
+    width: 240px;
+    height: 375px;
+    vertical-align: text-top;
+    overflow: auto;
+    padding: 15px 0px 0px 0px;
+}
+
+#end-pickup-container{
+    width: 100%
+}
+
+.ready-countdown{
+    float: right;
+}
+
+.pickup-avatar{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.box-pickup ul{
+	margin: 15px 0px 0px;
+	padding: 0px;
+	list-style: outside none none;
+	display: inline-block;
+	width: 220px;
+	vertical-align: top;
+}
+
+.box-pickup li + li {
+    margin-top: 6px;
+    font-family: Tahoma;
+    font-weight: bold;
+    position: relative;
+}
+
+.box-pickup li:first-child {
+    background: url('../../front/image/form.gif') repeat-x scroll 0% 0% transparent;
+    padding-left: 3px;
+    padding-left-value: 3px;
+    padding-left-ltr-source: physical;
+    padding-left-rtl-source: physical;
+    font-weight: 400;
+    font-size: 22px;
+    white-space: normal;
+    -moz-user-select: none;
+    cursor: pointer;
+    color: #333;
+    border-radius: 3px;
+    border-bottom: 1px solid #AAA;
+
+}
+
+.box-pickup li {
+    border-left: 4px solid #DBDAD4;
+    background: none repeat scroll 0% 0% #DBDAD4;
+    color: #CFCFCF;
+    font-size: 15px;
+    display: block;
+    padding: 3px 6px;
+    line-height: 24px;
+    transition: all 0.1s ease-out 0s;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 25px;
+    border-radius: 3px;
+    color: #333;
+    border-bottom: 1px solid #AAA;
+}
+
+.box-pickup li:first-child:hover {
+     border-left-color: #0D7ADA;
+     background-color: #606060;
+}
+
+.scout-icon {
+    background-image: url('classes/scout_2.png');
+}
+
+.soldier-icon {
+    background-image: url('classes/soldier_2.png');
+}
+
+.demo-icon {
+    background-image: url('classes/demo_2.png');
+}
+
+.medic-icon {
+    background-image: url('classes/medic_2.png');
+}
+
+
+.class-icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: transparent;
+    vertical-align: middle;
+    height: 25px;
+    width: 25px;
+    padding-bottom: 4px;
+}
+
+#in-pickup-container{
+    height: 31px;
+    margin: 15px 0px 15px 0px;
+}
+
+#in-pickup{
+    display: none;
+}
+
+#in-pickup > ul{
+    margin: 0px 3px 4px 0px !important;
+}
+
+.select-map{    
+    background-color: #EAEAEA;
+    height: 31px;
+    width: 220px;
+    border: 0px;
+    border-left: 4px solid #C3C3C3;
+    cursor: pointer;
+    color: #333;
+    font-size: 15px;
+    font-family: Tahoma;
+    font-weight: bold;
+}
+
+.select-map:hover{
+    border-left-color: #0D7ADA;
+}
+
+.counter{
+    float: right;
+}
+
+#chat-box-container{
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+#chat-box{
+    display: inline-block;
+    width: 75%;
+    height: 300px;
+    /*background: #333;*/
+    border-top: solid 1px #C3C3C3;
+    border-left: solid 1px #C3C3C3;
+    overflow: auto;
+    margin: 0px 0px 0px 0px;
+    border-right: 3px solid white;
+}
+
+#connected-block{
+    display: inline-block;
+    width: 171px;
+    height: 100%;
+}
+
+#connected-block-top{
+    display: block;
+    width: 100%;
+    height: 27px;
+    color: white;
+    font-weight: bold;
+} 
+
+#connected-block-top > h3{
+    width: 160px;  
+} 
+
+#connected-list{
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#admin-list a{
+    color: red;
+}
+
+#connected-list > li{
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#connected-block-bot{
+    display: block;
+    width: 100%;
+    height: 278px;
+    /*background: #333;*/
+    overflow: auto;
+    border-right: solid 1px #C3C3C3;
+}  
+
+
+#input-message{
+    width: 693px;
+    border-radius: 0px;
+    border: 1px solid #C3C3C3;
+}
+
+.message ul{
+    /*margin: 15px 0px 0px;*/
+    padding: 0px;
+    list-style: outside none none;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.message li {
+    border-left: 4px solid #DBDAD4;
+    background-color: #DBDAD4;
+    color: #333;
+    display: block;
+    transition: all 0.1s ease-out 0s;
+    white-space: initial;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+ 
+
+.message-admin li {
+    border-left: 4px solid red;
+    background-color: #DBDAD4;
+    color: #333;
+    display: block;
+    transition: all 0.1s ease-out 0s;
+    white-space: initial;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.msgmessage{
+    margin: 0px 5px 0px 10px;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #333;
+}
+
+.sep{
+    height: 5px;
+    background: transparent;
+}
+.sepsame{
+    height: 1px;
+    background: transparent;
+}
+
+.msgauthor{
+    font-weight: bold;
+    color: #333;
+}
+
+.msgdate{
+    display: block;
+    float: right;
+    padding-right: 5px;
+}
+.msgauthor{
+    padding-left: 5px;
+}
+
+.small-pic{
+    height: 70px;
+}
+
+.map-name{
+   position: relative;
+    bottom: 18px;
+    background: none repeat scroll 0% 0% #333;
+    left: 0px;
+    margin: 0px;
+    width: 180px;
+    color: #FFF;
+    padding: 0px 0px 0px 0px;
+    line-height: 17px;
+    font-weight: bold;
+    white-space: initial;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.map-name-small{
+    position: relative;
+    bottom: 18px;
+    background: none repeat scroll 0% 0% #333;
+    left: 0px;
+    margin: 0px;
+    width: 115px;
+    color: #FFF;
+    padding: 0px 0px 0px 0px;
+    line-height: 17px;
+    font-weight: bold;
+    white-space: initial;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.map-pic{
+    display: block;
+}
+
+#pickup-team{
+    display: block;
+    width: 100%;
+    height: 540px;
+    margin-top: 62px;
+    /*background: orange;*/
+}
+
+#blu-team{
+    float: left;
+    width: 45%;
+    height: 310px;
+    /*background: blue;*/
+    text-align: right;
+
+}
+
+#blu-team p{
+    text-align: right;
+    margin-right: 35px;
+    font-weight: bold;
+}
+
+#red-team{
+    float: right;
+    width: 45%;
+    height: 310px;
+    /*background: red;*/
+}
+
+#red-team p{
+
+    margin-left: 35px;
+    font-weight: bold;
+}
+
+.team-classes{
+    display: block;
+    width: 100%;
+    border-bottom: ridge 2px #C3C3C3;
+
+
+}
+
+#server-info{
+    height: 30px;
+}
+
+#pickup-map{
+    float: right;
+}
+
+#server-info p{
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+#report-player{
+    display: block;
+    /*background: purple;*/
+    width: 100%;
+    margin-top: 320px
+}
+
+#report-message{
+    height: 100px;
+    width: 698px;
+    resize: none;
+}
+
+.span-pickup-button{
+    background: url('../../front/image/form.gif') repeat-x scroll 0% 0% transparent;
+    padding-left: 3px;
+    padding-left-value: 3px;
+    padding-left-ltr-source: physical;
+    padding-left-rtl-source: physical;
+    /*font-weight: 400;*/
+    /*font-size: 22px;*/
+    white-space: normal;
+    -moz-user-select: none;
+    cursor: pointer;
+    color: #333;
+    border-radius: 3px;
+    border-bottom: 1px solid #AAA;
+    border-left: 4px solid #DBDAD4;
+    padding-right: 7px;
+}
+
+.span-pickup-button:hover{
+    border-left-color: #0D7ADA;
+}
+
